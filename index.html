@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Caluma AgroSecurity - Sistema avanzado de seguridad agrícola y telemetría LoRa por JEGA-BYTE.">
+    <title>Caluma AgroSecurity | by JEGA-BYTE</title>
+    <style>
+        :root {
+            --primary-color: #005f73; /* Azul verdoso técnico */
+            --secondary-color: #0a9396;
+            --accent-color: #94d2bd;
+            --text-dark: #333333;
+            --text-light: #f8f9fa;
+            --bg-light: #ffffff;
+            --bg-gray: #f4f6f8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        body { line-height: 1.6; color: var(--text-dark); background-color: var(--bg-light); }
+
+        /* Header / Navegación */
+        header { background: var(--bg-light); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        header .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); text-decoration: none; }
+        header .logo span { color: var(--text-dark); font-size: 0.9rem; font-weight: 400; }
+
+        /* Sección Hero (Principal) */
+        .hero { background: linear-gradient(135deg, var(--primary-color) 0%, #001219 100%); color: var(--text-light); padding: 5rem 5%; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem; color: #e9ecef; }
+        .btn { display: inline-block; background: var(--secondary-color); color: white; padding: 0.8rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background: var(--accent-color); color: var(--text-dark); }
+
+        /* Características Técnicas */
+        .features { padding: 4rem 5%; background: var(--bg-gray); text-align: center; }
+        .features h2 { font-size: 2.2rem; margin-bottom: 3rem; color: var(--primary-color); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--secondary-color); margin-bottom: 1rem; }
+
+        /* Especificaciones Hardware */
+        .specs { padding: 4rem 5%; }
+        .specs h2 { font-size: 2.2rem; margin-bottom: 2rem; color: var(--primary-color); text-align: center; }
+        .specs-content { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; justify-content: center; }
+        .specs-text { flex: 1; min-width: 300px; }
+        .specs-text ul { list-style: none; }
+        .specs-text li { margin-bottom: 1rem; padding-left: 1.5rem; position: relative; }
+        .specs-text li::before { content: "⚡"; position: absolute; left: 0; top: 0; }
+
+        /* Footer */
+        footer { background: #001219; color: var(--text-light); text-align: center; padding: 2rem 5%; }
+        footer a { color: var(--accent-color); text-decoration: none; }
+
+        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">CALUMA <span>by JEGA-BYTE</span></a>
+    </header>
+
+    <section class="hero">
+        <h1>Seguridad y Telemetría Agrícola Avanzada</h1>
+        <p>Sistema de monitorización robusto de ultrabajo consumo. Diseñado con arquitectura de hardware industrial para la protección de infraestructuras críticas en entornos rurales.</p>
+        <a href="#contacto" class="btn">Solicitar Información Técnica</a>
+    </section>
+
+    <section class="features">
+        <h2>Arquitectura del Sistema</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Comunicación LoRa 433 MHz</h3>
+                <p>Transmisión de datos de largo alcance y alta penetración en entornos agrícolas, garantizando telemetría estable sin depender de redes celulares tradicionales.</p>
+            </div>
+            <div class="card">
+                <h3>Núcleo STM32 Low-Power</h3>
+                <p>Gestión inteligente de energía utilizando microcontroladores STM32. Optimización de rutinas de 'Deep Sleep' para maximizar la vida útil de la batería en campo.</p>
+            </div>
+            <div class="card">
+                <h3>PCB Circular & Pogo-Pins</h3>
+                <p>Diseño mecánico y electrónico integrado. Factor de forma circular optimizado para carcasas estancas, con sistema de conexión magnética pogo-pin para mayor fiabilidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs">
+        <h2>Especificaciones de Hardware</h2>
+        <div class="specs-content">
+            <div class="specs-text">
+                <ul>
+                    <li><strong>Detección de intrusos:</strong> Lazos magnéticos antimanipulación de alta precisión.</li>
+                    <li><strong>Procesamiento:</strong> MCU STM32 con arquitectura eficiente para nodos IoT.</li>
+                    <li><strong>Mecánica:</strong> Envolvente 3D optimizada para intemperie (IP67/IP68).</li>
+                    <li><strong>Fabricación:</strong> Diseño multicapa de alta densidad, mitigación de ruido y cruce de señales.</li>
+                </ul>
+            </div>
+            <!-- Aquí puedes añadir la etiqueta <img> apuntando a un render de SolidWorks o KiCad -->
+            <div style="flex: 1; min-width: 300px; background: #e9ecef; height: 250px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-style: italic;">
+                [Espacio para render 3D de la placa/carcasa (ej. img/pcb-render.png)]
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <h2>¿Necesitas integrar este sistema?</h2>
+        <p style="margin: 1rem 0;">Proyecto desarrollado por el área de prototipado e ingeniería IoT de <strong>JEGA-BYTE</strong>.</p>
+        <p>Email: <a href="mailto:info@jegabyte.com">info@jegabyte.com</a> | Ubicación: Elche, España.</p>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: #6c757d;">&copy; 2026 JEGA-BYTE. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
