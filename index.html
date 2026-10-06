@@ -31,7 +31,7 @@
         nav .links a:hover { background: var(--white); color: #1f242a; }
 
         /* Hero */
-        .hero { text-align: center; padding: 5rem 2rem; }
+        .hero { text-align: center; padding: 5rem 2rem; position: relative; overflow: hidden; background-image: linear-gradient(180deg, rgba(31,36,42,0.88) 0%, rgba(31,36,42,0.75) 50%, rgba(31,36,42,0.92) 100%), url('img/hero-bg.webp'); background-size: cover; background-position: center; }
         .hero .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1.5rem; display: block; }
         .hero h1 { font-size: 3.6rem; font-weight: 800; text-transform: uppercase; line-height: 1.15; letter-spacing: -1px; }
         .hero h1 .hl { color: var(--gray); }
@@ -150,21 +150,19 @@
         <p class="section-sub">Una red de sensores inalámbricos (WSN) distribuida por el terreno, interconectada entre sí para cubrir grandes extensiones a bajo costo.</p>
         <div class="grid">
             <div class="card">
-                <img src="img/slave-pcb.png" alt="Placa Caluma Slave IOT" style="max-width: 160px; width: 100%; display: block; margin: 0 auto 1rem; border-radius: 8px;">
+                <img src="img/slave-pcb.png" alt="Placa Caluma Slave IOT" style="max-height: 170px; width: auto; max-width: 100%; display: block; margin: 0 auto 1rem; border-radius: 8px;">
                 <h3>Caluma Slave IOT</h3>
                 <p>Dispositivo tipo "trampa de línea": un cable se tiende entre árboles o postes en la zona a proteger. Si el intruso lo mueve, el Slave se activa de inmediato y alerta de la intrusión.</p>
             </div>
             <div class="card">
+                <img src="img/master-pcb.png" alt="Placa Caluma Master IOT" style="max-height: 170px; width: auto; max-width: 100%; display: block; margin: 0 auto 1rem; border-radius: 8px;">
                 <h3>Caluma Master IOT</h3>
                 <p>Coordina la red de sensores Slave, recibe los eventos y los transmite a la plataforma web, permitiendo cubrir grandes extensiones con múltiples puntos de control.</p>
             </div>
             <div class="card">
+                <img src="img/plataforma-chart.png" alt="Dashboard de la plataforma Caluma" style="max-height: 170px; width: auto; max-width: 100%; display: block; margin: 0 auto 1rem; border-radius: 8px;">
                 <h3>Plataforma Web</h3>
                 <p>Los datos se almacenan en la nube y se notifican por mensajería instantánea. Desde tu perfil puedes activar, desactivar y personalizar la protección en tiempo real.</p>
-            </div>
-            <div class="card">
-                <h3>Monitoreo de Motobombas y Riego</h3>
-                <p>Detecta si la maquinaria agrícola, sistemas de riego o motobombas son movidos de su posición original, evitando pérdidas de cultivo por falta de agua o energía.</p>
             </div>
         </div>
     </section>
@@ -177,13 +175,12 @@
             </div>
             <div class="divider"></div>
             <div class="lettered">
-                <div class="item"><div class="letter">A</div><div class="pill">Alimentación solar</div></div>
-                <div class="item"><div class="letter">B</div><div class="pill">Bajo consumo energético</div></div>
-                <div class="item"><div class="letter">C</div><div class="pill">Red mesh propia de sensores inalámbricos (WSN)</div></div>
-                <div class="item"><div class="letter">D</div><div class="pill">Doble tecnología de sensado: diferencia humanos de animales</div></div>
-                <div class="item"><div class="letter">E</div><div class="pill">Sensores térmicos para detección temprana de incendios</div></div>
-                <div class="item"><div class="letter">F</div><div class="pill">Conexión a internet mediante redes móviles</div></div>
-                <div class="item"><div class="letter">G</div><div class="pill">Carcasas en impresión 3D, resistentes a la intemperie</div></div>
+                <div class="item"><div class="letter">A</div><div class="pill">Bajo consumo energético</div></div>
+                <div class="item"><div class="letter">B</div><div class="pill">Red mesh propia de sensores inalámbricos (WSN)</div></div>
+                <div class="item"><div class="letter">C</div><div class="pill">Doble tecnología de sensado: diferencia humanos de animales</div></div>
+                <div class="item"><div class="letter">D</div><div class="pill">Sensores térmicos para detección temprana de incendios</div></div>
+                <div class="item"><div class="letter">E</div><div class="pill">Conexión a internet mediante redes móviles</div></div>
+                <div class="item"><div class="letter">F</div><div class="pill">Carcasas en impresión 3D, resistentes a la intemperie</div></div>
             </div>
         </div>
     </section>
